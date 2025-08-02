@@ -1,0 +1,24 @@
+fun main() {
+    val num = 99
+    val num_2 = 99
+    val result = num + num_2
+//Arithematic OPerations
+
+    println("result = ${result}")
+    println("result = $result ")
+    println("result = ${num + num_2}")
+    println("a*b = ${num * num_2}")
+    println("a/b = ${num / num_2}")
+    println("a%b = ${num % num_2}")
+    // Relational Operators
+    val RahulMarks = 90
+    val PriyaMarks = 91
+    if(RahulMarks> PriyaMarks){
+        println(" Rahul scored higher than Priya " )}
+    else if (RahulMarks < PriyaMarks){
+        println("Priya scored higher than Rahul " )
+    }
+    else{
+        println("Both scored EQUAL")
+    }
+}
