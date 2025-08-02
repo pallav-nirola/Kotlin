@@ -21,4 +21,20 @@ fun main() {
     else{
         println("Both scored EQUAL")
     }
+val x = 10
+    val y = 20
+
+    var isValid = false
+
+   
+    if (x > 0 && y < 40) {
+        isValid = true
+    }
+
+    // Only print if isValid is true
+    if (true) {
+        println("Yes this is true")
+    } else {
+        println("Condition not met")
+    }
 }
