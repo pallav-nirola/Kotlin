@@ -37,4 +37,8 @@ val x = 10
     } else {
         println("Condition not met")
     }
+
+    val radi = 30.0
+     val pi = 22.0/7.0
+    println("the vloume is ${((4.0/3.0)*pi)*Math.pow(radi,3.0)}")
 }
