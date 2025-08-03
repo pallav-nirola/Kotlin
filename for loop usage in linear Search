@@ -1,0 +1,20 @@
+fun main() {
+
+    val array = arrayOf("Hello", "Meera")
+   for (i in 0 until array.size
+   ) {
+       println(array[i]) }}
+// fun main(){
+
+    val array = arrayOf(4,5,7,8,1,2,6,9)
+    var max = array[0]
+    for (i in 1 until array.size
+    ){
+        if(array[i]>array[0]){
+            max = array[i]
+        }
+    }
+    println(max)
+
+}
+
