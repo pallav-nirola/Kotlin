@@ -4,7 +4,8 @@ fun main() {
    for (i in 0 until array.size
    ) {
        println(array[i]) }}
-// fun main(){
+//Linear search
+fun main(){
 
     val array = arrayOf(4,5,7,8,1,2,6,9)
     var max = array[0]
@@ -17,4 +18,18 @@ fun main() {
     println(max)
 
 }
+// sum of the array 
+fun main(){
+
+    val array = arrayOf(4,5,7,8,1,2,6,9)
+ var sum = 0
+ for (i in 0 until array.size
+ )
+ { 
+     sum  = sum + array[i]
+ }
+    println(sum)
+}
+
+
 
