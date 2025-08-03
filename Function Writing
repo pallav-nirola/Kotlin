@@ -1,0 +1,9 @@
+fun main() {
+
+    CalculateMarks(80, 70, 50)
+}
+fun CalculateMarks ( maths : Int , english: Int , Spanish : Int){// kotlin syntax fun functionName(paramName: Type, ...)
+// int is wrong but Int is correct
+    val total = maths + english +  Spanish
+    println("Your total is ${total}")
+}
