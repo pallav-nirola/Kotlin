@@ -1,0 +1,11 @@
+fun main() {
+    print("Enter a string: ")
+    val string = readLine() ?: "" // readline takes the input and ?:"" avoids null string
+    val string_2 = string.reversed()
+    
+    if (string == string_2) {
+        println("CONGRATULATIONS")
+    } else {
+        println("sorry")
+    }
+}
