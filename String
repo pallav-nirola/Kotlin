@@ -1,0 +1,29 @@
+fun main() {
+    print("Enter a string: ")
+    val string = readLine() ?: "" // Try to read input from the user. If nothing comes (it's null), just use an empty string instead
+    val string_2 = string.reversed()
+    
+    if (string == string_2) {
+        println("CONGRATULATIONS")
+    } else {
+        println("sorry")
+    }
+}
+fun main() {
+    println("Enter your age:")
+    val age = readLine()!!.toInt() // readLine() → asks the user to type something (as text).
+
+//!! → says: “I’m sure the input is not null.”
+//❗ If it is null, the program will crash.
+
+//toInt() → turns the string into an Int (like "23" becomes 23
+
+    if (age > 18 && age < 51) {
+        println("You are an adult")
+    } else if (age < 18) {
+        println("You are a kid")
+    } else {
+        println("Bye Uncle")
+    }
+}
+
