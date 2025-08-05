@@ -1,0 +1,15 @@
+fun main() {
+var lists = mutableListOf<Int>() // firstly you have created an empty mutable list and specified it will contain an integer
+
+    println("enter the array size")
+    var arraySize = readLine()!!.toInt()
+    for (i in 0 until arraySize){
+        val str = readLine()?.toInt()
+        if(str != null){
+            lists.add(str)
+
+        }
+
+    }
+    println(lists)
+}
