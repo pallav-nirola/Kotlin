@@ -1,0 +1,20 @@
+fun main() {
+    println("Enter the array size")
+    val size = readLine()!!.toInt()
+    val lists = mutableListOf<Int>()
+
+    println("Enter $size integers:")
+    for (i in 0 until size) {
+        val input = readLine()?.toIntOrNull()
+        if (input != null) {
+            lists.add(input) // Adding Numbers Dynamically
+        } else {
+            println("Invalid input, skipping.")
+        }
+    }
+
+    println("Reversed array:")
+    for (i in size - 1 downTo 0) {// use down to when -- use until when ++
+        print("${lists[i]} ")
+    }
+}
