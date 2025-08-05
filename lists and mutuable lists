@@ -1,0 +1,12 @@
+fun main(){
+
+   var list = listOf(1, 2, 3, 4, 5)//this can't be changed in future unlike arrays
+    var listS = mutableListOf(1, 2, 3, 4, 5) //this can be changed also has the ability to increase size
+  var array = arrayOf(1,2,3,4,5)
+    println(listS)
+println(list)
+    listS.remove(5)
+    listS.add(7)
+    listS.removeAt(1)
+}
+
