@@ -1,0 +1,16 @@
+//fun Power(base: Double , powe: Double){
+//    val result = Math.pow(base, powe)
+//    println("result is ${result}")
+//
+//}
+//fun main() {
+//    Power(3.0,4.0)
+//}
+fun Power(base: Int , powe: Int){
+    val result = Math.pow(base.toDouble(), powe.toDouble())// you may also use this but need to convert the Math.pow to double as it takes only DOuble value you can amke you int into double then use it or simply do the first one approach to directly introduce a double number only
+    println("result is ${result}")
+
+}
+fun main() {
+    Power(3,4)
+}
