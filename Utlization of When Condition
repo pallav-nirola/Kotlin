@@ -1,0 +1,39 @@
+fun main() {
+    val age = readLine()?.toInt()
+val age_2.0 = 8
+//  operator using when
+    when (age) {
+        in 0..5 -> println("You're a young kid")
+        in 6..17 -> println("You're a teenager")
+        18 -> if(x==8){ println("Finally, you're 18")}// at first here only agae criteria will be fitted as when is only switch operator of age
+and not age_2.0
+        19, 20, 21 -> println("You're a young adult")
+    }
+
+    if (age in 0..5) {
+        println("You're a young kid")
+    } else if (age in 6..17) {
+        println("You're a teenager")
+    } else if (age == 18 && x == 8) {
+        println("Finally, you're 18!")
+    } else if (age == 19 || age == 20) {
+        println("You're a young adult")
+    } else if (age in 21..65) {
+        println("You're an adult")
+    } else {
+        println("You're really old")
+    }
+}
+fun main() {
+    val country = readLine()!!.toString()
+
+    when(country){
+        "India" -> println("Namaste")
+        "Germany" -> println("Halo")
+        "Japan" -> println("Konichiva")
+        "Russia" -> println("Privet")
+     "England" -> println("Hello")
+        else -> println("Sorry country not recognized")
+    }
+}
+
