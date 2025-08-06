@@ -1,6 +1,7 @@
 fun power(base: Int , powe: Int) : Double{// this tells the return type
     val result = Math.pow(base.toDouble(), powe.toDouble())
-    return result
+    return result// after this any code won't work
+println("after)//this won't work
 }
 fun main(){
     println("enter the base then power")
