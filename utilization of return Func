@@ -1,0 +1,9 @@
+fun power(base: Int , powe: Int) : Double{// this tells the return type
+    val result = Math.pow(base.toDouble(), powe.toDouble())
+    return result
+}
+fun main(){
+    println("enter the base then power")
+    val result = power(3,2)// for the return type we store power() in the reuslt for further utilization , it is necessary to store in return type unlike the print just call
+    println(result)
+}
