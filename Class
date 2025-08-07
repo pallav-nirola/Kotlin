@@ -1,0 +1,28 @@
+class rectangle(val a : Double,    val b : Double){
+
+init {
+    println("Rectangle created with side a = $a , and b = $b")
+}
+    fun area(): Double{
+        return  a *b
+    }
+    fun perimeter() : Double{
+       return a+b
+    }
+    fun isSqaure() : Boolean{
+if (a==b){
+    return true
+}
+        else{
+            return false
+        }
+    }
+}
+fun main(){
+    val myRect = rectangle(  a=4.0,  b = 9.0)
+    println("${myRect.area()}")
+    println("${myRect.perimeter()}")
+    println("${myRect.isSqaure()}")
+
+
+}
