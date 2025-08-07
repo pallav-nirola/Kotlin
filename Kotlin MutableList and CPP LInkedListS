@@ -1,0 +1,6 @@
+Feature	        Kotlin mutableListOf()	          C++ std::list
+Can grow/shrink 	✅ Yes	                          ✅ Yes
+Allows element modification	✅ Yes                ✅ Yes
+Backed by	Usually ArrayList (dynamic array)       	Doubly linked list
+Performance (random access)	✅ Fast (O(1))	       ❌ Slow (O(n))
+Performance (insertion/removal in middle)	         ❌ Slow (O(n))	✅ Fast (O(1) if you have iterator) 
