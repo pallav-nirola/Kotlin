@@ -1,0 +1,31 @@
+//open class Animal {
+
+//    private var age = 0
+//    fun eat() = println("Eating")
+//} 
+// classa re public by deafult in kotlin unlike in cpp they are private
+
+
+
+// Parent class
+open class Animal {
+    protected fun sleep() {
+        println("Sleeping...")
+    }
+}
+
+// Child class
+class Dog : Animal() {
+    fun takeNap() {
+        sleep()  // ✅ This works — Dog is a subclass of Animal
+    }
+}
+
+// Outside the class
+fun main() {
+    val dog = Dog()
+    dog.takeNap()       // ✅ OK
+    // dog.sleep()      ❌ ERROR: Cannot access 'sleep': it is protected
+}
+
+
