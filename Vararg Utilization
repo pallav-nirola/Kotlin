@@ -1,0 +1,100 @@
+//////import java.lang.classfile.AnnotationValue
+//////
+fun Find(vararg array: Int): Int {
+    var evenSum = 0
+    var oddSum = 0
+
+    for (i in array.indices) {// array.inidices provides you with a range like her it is from 0..5
+        if (i % 2 == 0) {evenSum += array[i]}
+        else {oddSum += array[i]}
+    }
+    val result = (evenSum - oddSum)
+
+    return result
+}
+
+fun main() {
+    println(Find(1, 2, 3, 4, 5))  
+}
+
+//fun Find (vararg array : Int):Int{
+//    var sum = 0
+//    var sum_2 =0
+//    for (i in 0 until array.size step 2)
+//    {
+//        sum = sum + array[i]
+//    }
+//    for (i in 1 until array.size step 2){
+//        sum_2 = sum_2 + array[i]
+//    }
+//    val result = sum - sum_2
+//    return result }
+//
+//
+//fun main(){
+//
+//    val arr = intArrayOf(1, 2, 3, 4, 5) //Dynamic or reusable call// use intArrayof() regardless you use varag or not it is mroe optimised
+//    println(Find(*arr)) }// ✅ use * to pass array to vararg
+////Dynamic or reusable call
+//
+////fun Find (vararg array : Int):Int{
+////    var sum = 0
+////    var sum_2 =0
+////    for (i in 0 until array.size step 2)
+////    {
+////        sum = sum + array[i]
+////    }
+////    for (i in 1 until array.size step 2){
+////        sum_2 = sum_2 + array[i]
+////    }
+////    val result = sum - sum_2
+////return result }
+////
+////
+////fun main(){
+////
+////    println(Find(1, 2, 3, 4, 5))} // ✅ no array, no *
+////// Using Varag We can directly access the values
+//////    val Pal = Find(1,2,3,4,5)
+//////fun Find (array: Array<Int>):Int{
+//////    var sum = 0
+//////    var sum_2 =0
+//////    for (i in 0 until array.size step 2)
+//////    {
+//////        sum = sum + array[i]
+//////    }
+//////    for (i in 1 until array.size step 2){
+//////        sum_2 = sum_2 + array[i]
+//////    }
+//////    val result = sum - sum_2
+//////return result }
+//////
+//////
+//////fun main(){
+//////   val array = arrayOf(1,2,3,4,5)
+//////    println(Find(array))
+//////    val Pal = Find(array)//another way to write the above line
+//////    println(Pal)
+//////
+//////
+//////
+//////}
+//////
+//////
+//////
+////////fun main(){
+////////
+////////    val array = arrayOf(1,2,3,4,5)
+////////    var sum = 0
+////////    var sum_2 = 0
+////////    for (i in 0 until array.size step 2)
+////////    {
+////////        sum = sum + array[i]
+////////    }
+////////    for (i in 1 until array.size step 2){
+////////        sum_2 = sum_2 + array[i]
+////////    }
+////////    val result = sum - sum_2
+////////
+////////    println(result)
+////////}
