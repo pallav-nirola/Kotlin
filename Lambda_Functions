@@ -1,0 +1,32 @@
+fun main() {
+    var lists = (1..20).toList()
+    println(lists)
+    lists = lists.filter { it % 2 == 0 } // filter is a function that keeps elements only if a condition is true
+    println(lists)
+    lists = lists.filter { it > 8 }
+    println(lists)
+    var array = listOf(10, 1, 45, 13, 21, 56)
+    println(array)
+    array = array.sortedBy { it % 3 } //rearranges the elements in the list based on the value returned by the lambda
+    println(array)
+    // creating our own customizable lambda functions
+    var numbers = listOf(10, 1, 45, 13, 21, 56)
+    val square: (Int) -> (Int) = { it * it }
+    var squared_Number = numbers.map(square)
+    println(squared_Number)
+    var newList = (1..10).toList()
+    val odd : (Int) ->(Int) = {if(it % 2 == 1)1 else 0 }// return 1 if odd and 0 if even and make the with 1 and 0
+    var odd_numbers = newList.map(odd)
+    var count = 0
+    for (i in 0 .. odd_numbers.size - 1){
+        count = count + odd_numbers[i]
+    }
+    println(count)
+    val new_odd: (Int) -> Int = { if (it % 2 == 1) it else 0 }// return number if odd and return 0 if even
+    var new_odd_numbers = newList.map(new_odd)
+    var sum = 0
+    for (i in 0 .. new_odd_numbers.size - 1){ // new list is { 1 0 3 0 5 0 7 0 9
+        sum = sum + new_odd_numbers[i]
+    }
+    println(sum)
+}
