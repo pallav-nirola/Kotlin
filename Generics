@@ -1,0 +1,19 @@
+fun <T : Number> sum(lists: List<T>): Double {
+    return lists.map { if (it.toInt() % 2 == 1) it.toDouble() else 0.0 }.sum()
+}
+
+
+fun<T: Number> sum_1(lists_1 : List<T>):Double{
+    return lists_1.map{it.toDouble() }.sum()
+}
+fun main(){
+
+    val intList = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val doubleList = listOf(1.0, 2.0, 3.0, 4.0, 5.0)
+println(sum(intList))
+  println(sum(doubleList))
+    println(sum_1(intList))
+    println(sum_1(doubleList))
+
+
+}
